@@ -17,6 +17,8 @@ body:
       label: Código de alumno
       description: 'Ingrese su código de alumno.'
       placeholder: 'Ej. 202210341'
+    validations:
+      required: true
   - type: dropdown
     id: secciones
     attributes:
