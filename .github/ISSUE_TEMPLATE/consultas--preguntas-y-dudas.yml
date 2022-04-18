@@ -1,57 +1,38 @@
 name: "Consultas, Preguntas y Dudas"
 description: "¿Necesitas ayuda con tu código? ¿Te quedaste atascado programando?"
 body:
-  - type: markdown
-    attributes:
-      value: Thanks for taking the time to file a bug report! Please fill out this form as completely as possible.
-  - type: markdown
-    attributes:
-      value: If you leave out sections there is a high likelihood it will be moved to the GitHub Discussions ["Help" section](https://github.com/vercel/next.js/discussions/categories/help).
   - type: checkboxes
     attributes:
-      label: Verify canary release
-      description: '`next@canary` is the canary version of Next.js that ships daily. It includes all features and fixes that have not been released to the stable version yet. Think of canary as a public beta. Some issues may already be fixed in the canary version, so please verify that your issue reproduces before opening a new issue.'
+      label: Antes de reportar
+      description: '`Antes de emitir un issue` verifique que lo que desea preguntar no se encuentre en la lista de issues.'
       options:
-        - label: I verified that the issue exists in Next.js canary release
+        - label: He verificado la lista de issues y lo que deseo preguntar no se encuentra.
           required: true
-  - type: textarea
+  - type: dropdown
+    id: secciones
     attributes:
-      label: Provide environment information
-      description: Please run `next info` in the root directory of your project and paste the results. You might need to use `npx --no-install next info` if next is not in the current PATH.
+      label: ¿Cuál es tu sección de teoría?
+      options:
+        - Teoría 1
+        - Teoría 2
+        - Teoría 3
+        - Teoría 4
     validations:
       required: true
   - type: input
     attributes:
-      label: What browser are you using? (if relevant)
-      description: 'Please specify the exact version. For example: Chrome 100.0.4878.0'
-  - type: input
+      label: Código de alumno
+      description: 'Ingrese su código de alumno.'
+      placeholder: 'Ej. 202210341'
+  - type: markdown
     attributes:
-      label: How are you deploying your application? (if relevant)
-      description: 'For example: next start, next export, Vercel, Other platform'
+      value: `Recuerda NUNCA compartir códigos de solución.`
   - type: textarea
     attributes:
-      label: Describe the Bug
-      description: A clear and concise description of what the bug is.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Expected Behavior
-      description: A clear and concise description of what you expected to happen.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: To Reproduce
-      description: Steps to reproduce the behavior, please provide a clear code snippets that always reproduces the issue or a GitHub repository. Screenshots can be provided in the issue body below.
+      label: Detalle de la pregunta
+      description: Recuerde explicar su duda de la manera más detallada posible, si es necesario incluya `imagenes` y `ejemplos`.
     validations:
       required: true
   - type: markdown
     attributes:
-      value: Before posting the issue go through the steps you've written down to make sure the steps provided are detailed and clear.
-  - type: markdown
-    attributes:
-      value: Contributors should be able to follow the steps provided in order to reproduce the bug.
-  - type: markdown
-    attributes:
-      value: These steps are used to add integration tests to ensure the same issue does not happen again. Thanks in advance!
+      value: ®UTEC 2022
