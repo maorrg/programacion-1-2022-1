@@ -1,5 +1,5 @@
-name: "Realizar una consulta"
-description: "¿Necesitas ayuda con tu código? ¿Te quedaste atascado programando?"
+name: "Realizar una consulta y/o solicitar ayuda con errores de programación."
+description: "¿Necesitas ayuda con el envío de tu tarea? ¿Te quedaste atascado programando?"
 labels: "preguntas"
 body:
   - type: checkboxes

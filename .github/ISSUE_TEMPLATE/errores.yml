@@ -1,5 +1,5 @@
-name: "Reportar un error"
-description: "¿Identifiqué un error en el enunciado?¿La fecha de entrega de la tarea es erronea?¿Identifiqué un error general?"
+name: "Reportar un error en el enunciado"
+description: "¿Identifiqué un error en el enunciado? ¿La fecha de entrega de la tarea es erronea? ¿Identifiqué un error general?"
 labels: "errores"
 body:
   - type: checkboxes
