@@ -5,7 +5,7 @@ body:
   - type: checkboxes
     attributes:
       label: Antes de reportar
-      description: '`Antes de emitir un issue` verifique que lo que desea preguntar no se encuentre en la lista de issues.'
+      description: '`Antes de emitir un issue` verifique que lo que desea preguntar no se encuentre en la [lista de issues](https://github.com/mrg2000/programacion-1-2022-1/issues?q=).'
       options:
         - label: He verificado la lista de issues y lo que deseo preguntar no se encuentra.
           required: true
