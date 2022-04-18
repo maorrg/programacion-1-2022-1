@@ -7,7 +7,7 @@ body:
       description: '`Antes de emitir un issue` verifique que lo que desea preguntar no se encuentre en la lista de issues.'
       options:
         - label: He verificado la lista de issues y lo que deseo preguntar no se encuentra.
-          required: true
+          required: true 
   - type: dropdown
     id: secciones
     attributes:
@@ -24,15 +24,20 @@ body:
       label: Código de alumno
       description: 'Ingrese su código de alumno.'
       placeholder: 'Ej. 202210341'
-  - type: markdown
-    attributes:
-      value: Recuerda NUNCA compartir códigos de solución.
   - type: textarea
     attributes:
       label: Detalle de la pregunta
       description: Recuerde explicar su duda de la manera más detallada posible, si es necesario incluya `imagenes` y `ejemplos`.
     validations:
       required: true
+  - type: checkboxes
+    attributes:
+      label: Antes de enviar
+      options:
+        - label: Mi issue `no contiene código de solución` de ningún tipo.
+          required: true
+        - label: He agregado todos los `labels` o `etiquetas` correspondientes al issue.
+          required: true
   - type: markdown
     attributes:
       value: ®UTEC 2022
