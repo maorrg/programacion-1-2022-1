@@ -1,4 +1,3 @@
----
 name: Consultas, Preguntas y Dudas
 about: "¿Necesitas ayuda con tu código? ¿Te quedaste atascado programando?"
 title: ''
@@ -59,4 +58,3 @@ body:
   - type: markdown
     attributes:
       value: These steps are used to add integration tests to ensure the same issue does not happen again. Thanks in advance!
----
