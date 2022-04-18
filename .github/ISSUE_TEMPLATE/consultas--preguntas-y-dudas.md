@@ -4,12 +4,6 @@ about: "¿Necesitas ayuda con tu código? ¿Te quedaste atascado programando?"
 title: ''
 labels: ''
 assignees: ''
-
----
-
-name: Bug Report
-description: Create a bug report for the Next.js core
-labels: 'template: bug'
 body:
   - type: markdown
     attributes:
@@ -65,3 +59,4 @@ body:
   - type: markdown
     attributes:
       value: These steps are used to add integration tests to ensure the same issue does not happen again. Thanks in advance!
+---
