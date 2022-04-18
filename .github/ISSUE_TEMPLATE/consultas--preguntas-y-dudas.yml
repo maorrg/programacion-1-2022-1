@@ -8,7 +8,16 @@ body:
       description: '`Antes de emitir un issue` verifique que lo que desea preguntar no se encuentre en la lista de issues.'
       options:
         - label: He verificado la lista de issues y lo que deseo preguntar no se encuentra.
-          required: true 
+          required: true
+  - type: markdown
+    value: "---"
+  - type: input
+    attributes:
+      label: Código de alumno
+      description: 'Ingrese su código de alumno.'
+      placeholder: 'Ej. 202210341'
+      validations:
+        required: true
   - type: dropdown
     id: secciones
     attributes:
@@ -20,11 +29,21 @@ body:
         - Teoría 4
     validations:
       required: true
-  - type: input
+  - type: dropdown
+    id: numero-tarea
     attributes:
-      label: Código de alumno
-      description: 'Ingrese su código de alumno.'
-      placeholder: 'Ej. 202210341'
+      label: ¿A qué tarea corresponde esta duda?
+      options:
+        - Tarea 1.1
+        - Tarea 1.2
+        - Tarea 2
+        - Tarea 3
+        - Tarea 4
+        - No corresponde a ninguna tarea
+    validations:
+      required: true
+  - type: markdown
+    value: "---"
   - type: textarea
     attributes:
       label: Detalle de la pregunta
@@ -35,10 +54,9 @@ body:
     attributes:
       label: Antes de enviar
       options:
-        - label: Mi issue `no contiene código de solución` de ningún tipo.
+        - label: No estoy compartiendo ninguna solución parcial o total de la tarea.
           required: true
-        - label: He agregado todos los `labels` o `etiquetas` correspondientes al issue.
+        - label: He agregado todos los labels o etiquetas correspondientes al issue.
           required: true
   - type: markdown
-    attributes:
-      value: ®UTEC 2022
+    value: "®UTEC 2022"
