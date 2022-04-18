@@ -26,7 +26,7 @@ body:
       placeholder: 'Ej. 202210341'
   - type: markdown
     attributes:
-      value: `Recuerda NUNCA compartir códigos de solución.`
+      value: Recuerda NUNCA compartir códigos de solución.
   - type: textarea
     attributes:
       label: Detalle de la pregunta
