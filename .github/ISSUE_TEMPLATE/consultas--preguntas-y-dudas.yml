@@ -10,7 +10,8 @@ body:
         - label: He verificado la lista de issues y lo que deseo preguntar no se encuentra.
           required: true
   - type: markdown
-    value: "---"
+    attributes:
+      value: ---
   - type: input
     attributes:
       label: Código de alumno
@@ -43,7 +44,8 @@ body:
     validations:
       required: true
   - type: markdown
-    value: "---"
+    attributes:
+      value: ---
   - type: textarea
     attributes:
       label: Detalle de la pregunta
@@ -59,4 +61,5 @@ body:
         - label: He agregado todos los labels o etiquetas correspondientes al issue.
           required: true
   - type: markdown
-    value: "®UTEC 2022"
+    attributes:
+      value: ®UTEC 2022
