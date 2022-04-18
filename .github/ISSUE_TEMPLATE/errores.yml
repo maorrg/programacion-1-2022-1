@@ -1,0 +1,57 @@
+name: "Errores"
+description: "¿Identifiqué un error en el enunciado?¿La fecha de entrega de la tarea es erronea?¿Identifiqué un error general?"
+labels: "errores"
+body:
+  - type: checkboxes
+    attributes:
+      label: Antes de reportar
+      description: '`Antes de emitir un issue` verifique que lo que desea reportar no se encuentre en la lista de issues.'
+      options:
+        - label: He verificado la lista de issues y lo que deseo reportar no se encuentra.
+          required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: input
+    attributes:
+      label: Código de alumno
+      description: 'Ingrese su código de alumno.'
+      placeholder: 'Ej. 202210341'
+    validations:
+      required: true
+  - type: dropdown
+    id: secciones
+    attributes:
+      label: ¿Cuál es tu sección de teoría?
+      options:
+        - Teoría 1
+        - Teoría 2
+        - Teoría 3
+        - Teoría 4
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: input
+    attributes:
+      label: ¿En dónde se encuentra el error?
+      description: 'Ingrese el lugar en el que se encuentra el error.'
+      placeholder: 'Ej. Canvas, Gradescope, Tarea 2'
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reporte
+      description: Recuerde detallar el reporte de la manera más clara posible. Si es necesario incluya `imagenes` y `ejemplos`.
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Antes de enviar
+      options:
+        - label: He agregado todos los labels o etiquetas correspondientes al issue.
+          required: true
+  - type: markdown
+    attributes:
+      value: ®UTEC 2022
